@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoListItemComponent should render 1`] = `
+<app-todo-list-item
+  delete={[Function EventEmitter_]}
+  editing="false"
+  todo={[Function Object]}
+  toggle={[Function EventEmitter_]}
+  update={[Function EventEmitter_]}
+>
+  <li
+    class="completed"
+  >
+    <div
+      class="view"
+    >
+      <input
+        class="toggle"
+        type="checkbox"
+      />
+      <label>
+         Learn TDD 
+      </label>
+      <button
+        class="destroy"
+      />
+    </div>
+    <input
+      class="edit"
+      type="text"
+    />
+  </li>
+</app-todo-list-item>
+`;

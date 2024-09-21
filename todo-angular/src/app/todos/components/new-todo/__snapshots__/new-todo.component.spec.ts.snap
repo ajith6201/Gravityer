@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewTodoComponent should render 1`] = `
+<app-new-todo
+  addTodo={[Function EventEmitter_]}
+>
+  <input
+    autofocus=""
+    class="new-todo"
+    id="new-todo"
+    placeholder="What needs to be done?"
+    type="text"
+  />
+</app-new-todo>
+`;

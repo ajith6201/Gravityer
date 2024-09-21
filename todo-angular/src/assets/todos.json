@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0.123456789,
+    "text": "Gravityer!",
+    "creationDate": "2018-01-06",
+    "completed": false
+  },
+  {
+    "id": 0.123488789,
+    "text": "Nothing test todo!",
+    "creationDate": "2018-01-06",
+    "completed": false
+  },
+  {
+    "id": 0.124456789,
+    "text": "Interview process!",
+    "creationDate": "2018-01-06",
+    "completed": false
+  }
+]

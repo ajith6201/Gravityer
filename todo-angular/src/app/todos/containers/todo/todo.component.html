@@ -1,0 +1,23 @@
+<header class="header">
+  <!-- <h1>todos</h1> -->
+  @if ((loading$ | async) === false) {
+    <app-new-todo (addTodo)="onAddTodo($event)"></app-new-todo>
+  } @else {
+    <div>loading...</div>
+  }
+</header>
+@if (hasTodos$ | async) {
+  <app-todo-list
+    [todos]="filteredTodos$ | async"
+    (toggle)="onToggle($event)"
+    (update)="onUpdate($event)"
+    (delete)="onDelete($event)"
+  ></app-todo-list>
+  <app-footer
+    [hasCompletedTodos]="hasCompletedTodos$ | async"
+    [undoneTodosCount]="undoneTodosCount$ | async"
+    [currentFilter]="currentFilter$ | async"
+    (filter)="onFilter($event)"
+    (clearCompleted)="onClearCompleted()"
+  ></app-footer>
+}
